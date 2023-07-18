@@ -9,6 +9,7 @@ function MainScreen(props) {
     const [breedsList, setBreedsList] = useState([])
     const [isFetching, setIsFetching] = useState(false)
 
+    //pobranie danych z api w sposob asynchroniczny oraz kontrolowanie 'spinnera'
     useEffect(() => {
         async function getBreeds(){
             setIsFetching(true)
@@ -18,9 +19,6 @@ function MainScreen(props) {
         }
         getBreeds()
     },[])
-
-    console.log(breedsList)
-
 
     return (
         <div className="main-screen">

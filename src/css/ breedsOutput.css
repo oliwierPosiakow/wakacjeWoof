@@ -1,5 +1,9 @@
 .breedsList {
   list-style: none;
+  padding: 0;
+}
+.breedsList_item {
+  margin-bottom: 1.2em;
 }
 
 /*# sourceMappingURL=%20breedsOutput.css.map */

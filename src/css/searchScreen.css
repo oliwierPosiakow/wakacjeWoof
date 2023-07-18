@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.search-screen {
+  height: 100%;
+}
+.search-screen .message {
+  color: #868686;
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1.5em 0;
+}
+.search-screen .searchbar {
+  display: flex;
+  gap: 1em;
+}
+.search-screen .searchbar_input {
+  position: relative;
+  z-index: 1;
+  background-color: #1f1d2b;
+  color: #868686;
+  border: 1px solid #f5f5f5;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
+  flex: 1;
+}
+.search-screen .searchbar_input::placeholder {
+  color: #868686;
+}
+.search-screen .searchbar_input:before {
+  position: absolute;
+  content: "Wprowadź rasę której szukasz";
+  display: block;
+  top: 0;
+  left: 10px;
+  z-index: 2;
+  background-color: #efba54;
+  color: #868686;
+}
+.search-screen .searchbar_button {
+  background-color: #efba54;
+  color: #1f1d2b;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
+}
+.search-screen .searchbar_button:hover {
+  color: #f5f5f5;
+}
+
+/*# sourceMappingURL=searchScreen.css.map */

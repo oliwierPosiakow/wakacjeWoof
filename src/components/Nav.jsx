@@ -9,7 +9,7 @@ function Nav(props) {
     //sprawdzenie aktualnej sciezki w celu określenia koloru ikony
     const path = useLocation()
     function toggleActiveColor(desiredPath){
-        return path.pathname === desiredPath ? '#1f83bb' : 'black'
+        return path.pathname === desiredPath ? '#1f83bb' : '#1f1d2b'
     }
 
     return (

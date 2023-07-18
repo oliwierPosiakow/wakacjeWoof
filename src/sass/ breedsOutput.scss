@@ -1,3 +1,7 @@
 .breedsList{
   list-style: none;
+  padding: 0;
+  &_item{
+    margin-bottom: 1.2em;
+  }
 }

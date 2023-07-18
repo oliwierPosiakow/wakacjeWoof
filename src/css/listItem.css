@@ -1,0 +1,13 @@
+.item_link {
+  color: #868686;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  transition: all 0.1s ease-in;
+}
+.item_link:hover {
+  color: #efba54;
+  font-size: 1.3rem;
+}
+
+/*# sourceMappingURL=listItem.css.map */

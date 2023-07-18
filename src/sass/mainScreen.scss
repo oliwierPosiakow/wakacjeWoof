@@ -3,11 +3,14 @@
 .main-screen{
   height: 100%;
   &_header{
-    color: $text;
+    color: $heading;
+    font-weight: 500;
   }
   &_list{
-    height: 90%;
+    padding: .5em 0;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     overflow-x: hidden;
     overflow-y: auto;
   }
