@@ -9,12 +9,17 @@ function Nav(props) {
     //sprawdzenie aktualnej sciezki w celu określenia koloru ikony
     const path = useLocation()
     function toggleActiveColor(desiredPath){
-        return path.pathname === desiredPath ? '#1f83bb' : '#1f1d2b'
+        if(path.pathname === desiredPath){
+            return '#1f83bb'
+        }
+        else{
+            return '#1f1d2b'
+        }
     }
 
     return (
         <div className={'nav'}>
-            <Link className={'nav_link active'} to={'/'}>
+            <Link className={'nav_link'} to={'/'}>
                 <TbDog color={toggleActiveColor('/')} size={28}/>
             </Link>
             <Link className={'nav_link'} to={'/search'}>

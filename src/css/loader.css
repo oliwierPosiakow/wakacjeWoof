@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-self: center;
-  align-self: center;
+  margin-top: 50%;
+  transform: translateY(-50%);
 }
 .loader-wrapper_spinner {
   animation-name: spinning;
