@@ -18,6 +18,7 @@ function SearchScreen() {
             setError(null)
             const response = await axios.get(`https://dog.ceo/api/breed/${inputValue}/images/random`)
             setCurrentSearch(response.data.message)
+            setPassedData(response.data.message.toLowerCase())
         }
         catch (e){
             setError(true)
