@@ -15,10 +15,10 @@ function Nav(props) {
     return (
         <div className={'nav'}>
             <Link className={'nav_link active'} to={'/'}>
-                <TbDog color={toggleActiveColor('/')} size={32}/>
+                <TbDog color={toggleActiveColor('/')} size={28}/>
             </Link>
             <Link className={'nav_link'} to={'/search'}>
-                <BiSolidSearch color={toggleActiveColor('/search')} size={32}/>
+                <BiSolidSearch color={toggleActiveColor('/search')} size={28}/>
             </Link>
         </div>
     );

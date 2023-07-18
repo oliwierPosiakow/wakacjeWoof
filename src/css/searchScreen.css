@@ -7,46 +7,56 @@
   font-weight: 300;
   font-size: 1.2rem;
   text-align: center;
-  margin: 1.5em 0;
+  margin-bottom: 1.5em;
 }
 .search-screen .searchbar {
   display: flex;
+  flex-direction: column;
   gap: 1em;
 }
 .search-screen .searchbar_input {
-  position: relative;
-  z-index: 1;
   background-color: #1f1d2b;
   color: #868686;
   border: 1px solid #f5f5f5;
   border-radius: 7px;
-  font-size: 1.2rem;
-  padding: 0.5em 1em;
-  flex: 1;
+  font-size: 1rem;
+  padding: 0.8em 0.4em;
+  width: 100%;
 }
 .search-screen .searchbar_input::placeholder {
   color: #868686;
 }
-.search-screen .searchbar_input:before {
+.search-screen .searchbar-input-container {
+  flex: 1;
+  position: relative;
+}
+.search-screen .searchbar-input-container::before {
   position: absolute;
-  content: "Wprowadź rasę której szukasz";
-  display: block;
-  top: 0;
-  left: 10px;
-  z-index: 2;
+  top: -10px;
+  left: 8px;
+  content: "Wpisz rasę, której szukasz";
+  color: black;
+  font-size: 0.65rem;
+  padding: 0.2em 0.3em;
   background-color: #efba54;
-  color: #868686;
 }
 .search-screen .searchbar_button {
   background-color: #efba54;
   color: #1f1d2b;
   border: none;
   border-radius: 7px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0.5em 1em;
+  cursor: pointer;
 }
 .search-screen .searchbar_button:hover {
   color: #f5f5f5;
+}
+
+@media screen and (min-width: 350px) {
+  .searchbar {
+    flex-direction: row !important;
+  }
 }
 
 /*# sourceMappingURL=searchScreen.css.map */
