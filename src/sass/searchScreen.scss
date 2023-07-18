@@ -18,7 +18,7 @@
       border: 1px solid $heading;
       border-radius: 7px;
       font-size: 1rem;
-      padding: .8em .4em;
+      padding: .8em .75em;
       width: 100%;
       &::placeholder{
         color: $text;
@@ -30,7 +30,7 @@
       &::before{
         position: absolute;
         top: -10px;
-        left: 8px;
+        left: 12px;
         content: 'Wpisz rasę, której szukasz';
         color: black;
         font-size: .65rem;
@@ -50,6 +50,10 @@
         color: $heading;
       }
     }
+  }
+  .search-results{
+    height: 90%;
+    display: flex;
   }
 }
 

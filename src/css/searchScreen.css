@@ -20,7 +20,7 @@
   border: 1px solid #f5f5f5;
   border-radius: 7px;
   font-size: 1rem;
-  padding: 0.8em 0.4em;
+  padding: 0.8em 0.75em;
   width: 100%;
 }
 .search-screen .searchbar_input::placeholder {
@@ -33,7 +33,7 @@
 .search-screen .searchbar-input-container::before {
   position: absolute;
   top: -10px;
-  left: 8px;
+  left: 12px;
   content: "Wpisz rasę, której szukasz";
   color: black;
   font-size: 0.65rem;
@@ -51,6 +51,10 @@
 }
 .search-screen .searchbar_button:hover {
   color: #f5f5f5;
+}
+.search-screen .search-results {
+  height: 90%;
+  display: flex;
 }
 
 @media screen and (min-width: 350px) {

@@ -1,0 +1,36 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1em;
+  margin-top: 3em;
+}
+.banner_img {
+  background-image: url("src/assets/searchBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 3px solid #efba54;
+}
+.banner_msg {
+  color: #868686;
+  text-align: center;
+  max-width: 250px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.no-banner_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #868686;
+  border-radius: 50%;
+  padding: 2em;
+}
+
+/*# sourceMappingURL=breedResult.css.map */

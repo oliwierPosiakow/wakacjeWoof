@@ -13,5 +13,9 @@
   overflow-x: hidden;
   overflow-y: auto;
 }
+.main-screen .error-msg {
+  text-align: center;
+  color: #1f83bb;
+}
 
 /*# sourceMappingURL=mainScreen.css.map */
