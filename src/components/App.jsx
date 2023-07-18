@@ -7,10 +7,12 @@ function App() {
 
   return (
       <div className={'main'}>
-        <Routes>
-          <Route exact path='/' element={<MainScreen/>}/>
-          <Route path='/search' element={<SearchScreen/>}/>
-        </Routes>
+          <div className="main_container">
+              <Routes>
+                  <Route exact path='/' element={<MainScreen/>}/>
+                  <Route path='/search' element={<SearchScreen/>}/>
+              </Routes>
+          </div>
         <Nav/>
       </div>
   )

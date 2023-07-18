@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .main {
@@ -8,6 +9,11 @@
   flex-direction: column;
   flex: 1;
   background-color: #1f1d2b;
+}
+.main_container {
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=app.css.map */
