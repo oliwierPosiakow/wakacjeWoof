@@ -11,6 +11,7 @@ function SearchScreen() {
     const [passedData, setPassedData] = useState(useLocation())
     const [error, setError] = useState()
 
+    //funkcja odpowiadająca za pobranie danych po wprowadzeniu rasy w input
     async function handleSearch(){
         try{
             setCurrentSearch(null)
@@ -22,8 +23,12 @@ function SearchScreen() {
             setError(true)
         }
     }
-
-    console.log(passedData)
+    //funkcja umożliwjająca wyszukanie rasy po nacisnieciu "enter"
+    function handleEnter(event){
+        if(event.key === 'Enter'){
+            handleSearch()
+        }
+    }
 
     return (
         <div className='search-screen'>
@@ -36,6 +41,7 @@ function SearchScreen() {
                         placeholder={'np. Buldog angielski'}
                         value={inputValue}
                         onChange={(e) => setInputValue(e.target.value)}
+                        onKeyDown={handleEnter}
                     />
                 </div>
                 <button
