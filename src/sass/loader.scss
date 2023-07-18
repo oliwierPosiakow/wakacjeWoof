@@ -1,7 +1,8 @@
 .loader-wrapper{
   display: flex;
   justify-content: center;
-  align-self: start;
+  justify-self: center;
+  align-self: center;
   &_spinner{
     animation-name: spinning;
     animation-duration: 1s;

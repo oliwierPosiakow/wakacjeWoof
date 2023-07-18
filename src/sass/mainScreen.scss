@@ -1,10 +1,14 @@
 @import "constants";
 
 .main-screen{
+  height: 100%;
   &_header{
     color: $text;
   }
   &_list{
-
+    height: 90%;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 }
