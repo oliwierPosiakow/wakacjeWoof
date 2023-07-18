@@ -1,0 +1,12 @@
+@import "constants";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: $background;
+}

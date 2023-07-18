@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #1f1d2b;
+}
+
+/*# sourceMappingURL=app.css.map */

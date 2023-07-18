@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  width: 100vw;
+  height: 10vh;
+  background-color: #efba54;
+}
+
+/*# sourceMappingURL=nav.css.map */
