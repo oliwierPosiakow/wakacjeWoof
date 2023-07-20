@@ -8,6 +8,17 @@
   width: 100%;
   gap: 1em;
   margin-top: 3em;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .no-banner_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $text;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
   &_img{
     background-image: url('src/assets/searchBackground.jpg');
     background-repeat: no-repeat;
@@ -22,8 +33,6 @@
     color: $text;
     text-align: center;
     max-width: 250px;
-    overflow-x: hidden;
-    overflow-y: auto;
   }
 }
 
@@ -31,14 +40,16 @@
   display: flex;
   flex-direction: column;
   margin-top: 3em;
+  overflow-x: hidden;
+  overflow-y: auto;
   &_img-wrapper{
     display: flex;
     justify-content: center;
   }
   .breed-img{
-    min-width: 250px;
-    width: 60%;
-    max-width: 370px;
+    min-width: 100px;
+    width: 50%;
+    max-width: 320px;
     clip-path: circle();
   }
   &_title{
@@ -54,15 +65,4 @@
     overflow-x: hidden;
     overflow-y: auto;
   }
-}
-
-//klasa przypisana do ikony dla braku rezultatu wyszukiwania
-.no-banner_img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $text;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
 }

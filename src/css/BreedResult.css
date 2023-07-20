@@ -5,6 +5,17 @@
   width: 100%;
   gap: 1em;
   margin-top: 3em;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.banner .no-banner_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #868686;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 .banner_img {
   background-image: url("src/assets/searchBackground.jpg");
@@ -20,23 +31,23 @@
   color: #868686;
   text-align: center;
   max-width: 250px;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 .result {
   display: flex;
   flex-direction: column;
   margin-top: 3em;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .result_img-wrapper {
   display: flex;
   justify-content: center;
 }
 .result .breed-img {
-  min-width: 250px;
-  width: 60%;
-  max-width: 370px;
+  min-width: 100px;
+  width: 50%;
+  max-width: 320px;
   clip-path: circle();
 }
 .result_title {
@@ -53,14 +64,4 @@
   overflow-y: auto;
 }
 
-.no-banner_img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #868686;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-}
-
-/*# sourceMappingURL=breedResult.css.map */
+/*# sourceMappingURL=BreedResult.css.map */

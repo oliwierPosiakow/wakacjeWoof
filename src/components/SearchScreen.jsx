@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../css/searchScreen.css'
 import axios from "axios";
 import BreedSearch from "./BreedSearch.jsx";
@@ -6,19 +6,33 @@ import {useLocation} from "react-router-dom";
 
 function SearchScreen() {
 
+    const breedData = useLocation()
+
     const [inputValue, setInputValue] = useState('')
-    const [currentSearch, setCurrentSearch] = useState()
-    const [passedData, setPassedData] = useState(useLocation())
+    const [passedData, setPassedData] = useState(
+        {
+            img: '',
+            name: '',
+        }
+    )
     const [error, setError] = useState()
+
+    useEffect(() => {
+        if(breedData.state?.length > 0){
+            setPassedData(prevState => {
+                return {...prevState, name: breedData.state}
+            })
+            handleSearch()
+        }
+    },[])
 
     //funkcja odpowiadająca za pobranie danych po wprowadzeniu rasy w input
     async function handleSearch(){
+        const param = inputValue.length <= 0 ? breedData.state : inputValue.toLowerCase()
         try{
-            setCurrentSearch(null)
             setError(null)
-            const response = await axios.get(`https://dog.ceo/api/breed/${inputValue}/images/random`)
-            setCurrentSearch(response.data.message)
-            setPassedData(response.data.message.toLowerCase())
+            const response = await axios.get(`https://dog.ceo/api/breed/${param}/images/random`)
+            setPassedData({name: param, img: response.data.message})
         }
         catch (e){
             setError(true)
@@ -33,7 +47,7 @@ function SearchScreen() {
 
     return (
         <div className='search-screen'>
-            {!currentSearch && <h2 className="message">Szukaj a znajdziesz ;)</h2>}
+            {inputValue.length <= 0 && <h2 className="message">Szukaj a znajdziesz ;)</h2>}
             <div className="searchbar">
                 <div  className="searchbar-input-container">
                     <input
@@ -53,7 +67,7 @@ function SearchScreen() {
                 </button>
             </div>
             <div className="search-results">
-                <BreedSearch isInvalid={error} searchData={passedData}/>
+                <BreedSearch isInvalid={error} breedData={passedData}/>
             </div>
         </div>
     );
