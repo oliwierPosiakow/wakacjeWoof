@@ -18,7 +18,7 @@
   height: 200px;
 }
 .banner_img {
-  background-image: url(/searchBackground.jpg);
+  background-image: url(public/searchBackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
