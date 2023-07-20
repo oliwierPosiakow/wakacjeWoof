@@ -5,7 +5,7 @@ import BreedSearch from "./BreedSearch.jsx";
 import {useLocation} from "react-router-dom";
 
 function SearchScreen() {
-
+    //pobieranie danych przekazanych przez <Link/>
     const breedData = useLocation()
 
     const [inputValue, setInputValue] = useState('')
@@ -17,6 +17,7 @@ function SearchScreen() {
     )
     const [error, setError] = useState()
 
+    //sprawdzenie czy Link przekazał dane, jeśli tak, wstawienie ich w state
     useEffect(() => {
         if(breedData.state?.length > 0){
             setPassedData(prevState => {
@@ -26,7 +27,7 @@ function SearchScreen() {
         }
     },[])
 
-    //funkcja odpowiadająca za pobranie danych po wprowadzeniu rasy w input
+    //funkcja odpowiadająca za pobranie danych po wprowadzeniu rasy w input lub przekazaniu danych z <Link/> oraz obsługę błedu
     async function handleSearch(){
         const param = inputValue.length <= 0 ? breedData.state : inputValue.toLowerCase()
         try{

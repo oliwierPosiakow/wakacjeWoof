@@ -50,6 +50,9 @@
       &:hover{
         color: $heading;
       }
+      &:active{
+        transform: scale(0.97);
+      }
     }
   }
   .search-results{

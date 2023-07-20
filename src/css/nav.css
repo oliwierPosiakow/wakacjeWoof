@@ -17,8 +17,8 @@
 .nav .active:after {
   content: "";
   position: absolute;
-  top: -140%;
-  left: -48%;
+  top: -115%;
+  left: -50%;
   width: 200%;
   border-radius: 50%;
   height: 40px;

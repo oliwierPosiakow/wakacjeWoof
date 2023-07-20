@@ -4,7 +4,7 @@ import axios from "axios";
 import Loader from "./UI/Loader.jsx";
 import BreedsOutput from "./UI/BreedsOutput.jsx";
 
-function MainScreen(props) {
+function MainScreen() {
 
     const [breedsList, setBreedsList] = useState([])
     const [isFetching, setIsFetching] = useState(false)

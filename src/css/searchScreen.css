@@ -53,6 +53,9 @@
 .search-screen .searchbar_button:hover {
   color: #f5f5f5;
 }
+.search-screen .searchbar_button:active {
+  transform: scale(0.97);
+}
 .search-screen .search-results {
   height: 85%;
   display: flex;

@@ -1,9 +1,8 @@
 import '../css/app.css'
-import {Route, Routes, Navigate} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import MainScreen from "./MainScreen.jsx";
 import SearchScreen from "./SearchScreen.jsx"
 import Nav from "./Nav.jsx";
-import Error from "./Error.jsx";
 
 function App() {
 
@@ -13,7 +12,6 @@ function App() {
               <Routes>
                   <Route path='/' element={<MainScreen/>}/>
                   <Route path='/search' element={<SearchScreen/>}/>
-                  <Route path='*' element={<Error/>}/>
               </Routes>
           </div>
         <Nav/>

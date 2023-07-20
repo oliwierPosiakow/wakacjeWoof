@@ -2,7 +2,7 @@ import React from 'react';
 import {TbDog} from "react-icons/tb";
 import '../css/breedResult.css'
 
-//SearchResult to dodatkowy komponen pomocniczy który przyuje dane i w zależności od tego co otrzyma renderuje odpowiedni layout
+//SearchResult to dodatkowy komponen pomocniczy który przyjmuje dane i w zależności od tego co otrzyma renderuje odpowiedni layout
 function SearchResult({isInvalid, breedData}) {
     //sprawdzenie czy jakiekolwiek dane zostały przekazane poprzez propsy
     const noData = breedData.img.length <= 0 && breedData.name.length <= 0 ? true : false

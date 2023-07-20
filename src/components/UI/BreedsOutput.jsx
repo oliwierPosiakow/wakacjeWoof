@@ -8,7 +8,7 @@ function BreedsOutput({breeds}) {
     const breedNamesArray = Object.keys(breeds)
     const breedElements = breedNamesArray.map((el) => {
         return (
-            <li className={'breedsList_item'} key={el}>
+            <li className={'breeds-list_item'} key={el}>
                 <ListItem name={el}/>
             </li>
         )
@@ -16,7 +16,7 @@ function BreedsOutput({breeds}) {
 
     //zwrócenie kompletnej listy ras piesków
     return (
-        <ul className={'breedsList'}>
+        <ul className={'breeds-list'}>
             {breedElements}
         </ul>
     );

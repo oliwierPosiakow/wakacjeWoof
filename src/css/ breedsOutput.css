@@ -1,4 +1,4 @@
-.breedsList {
+.breeds-list {
   list-style: none;
   padding: 0;
   padding-bottom: 1em;
@@ -6,10 +6,10 @@
   height: 100%;
   max-height: 700px;
 }
-.breedsList_item {
+.breeds-list_item {
   margin-bottom: 1.2em;
 }
-.breedsList:last-child {
+.breeds-list:last-child {
   margin-bottom: 0;
 }
 
