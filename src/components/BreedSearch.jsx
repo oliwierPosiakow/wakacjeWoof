@@ -1,6 +1,6 @@
 import React from 'react';
 import {TbDog} from "react-icons/tb";
-import '../css/breedResult.css'
+import '../css/BreedResult.css'
 
 //SearchResult to dodatkowy komponen pomocniczy który przyjmuje dane i w zależności od tego co otrzyma renderuje odpowiedni layout
 function SearchResult({isInvalid, breedData}) {
