@@ -18,4 +18,4 @@ Aplikacja WOOF umożliwia wyszukiwanie ras psów poprzez dostępną listę pobie
 - REST API (https://dog.ceo/dog-api/)
 - SCSS
 
-## [LIVE DEMO](https://github.com/oliwierPosiakow)
+## [LIVE DEMO](https://marvelous-douhua-2670a0.netlify.app/)
