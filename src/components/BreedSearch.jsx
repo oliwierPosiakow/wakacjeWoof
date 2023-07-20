@@ -1,6 +1,7 @@
 import React from 'react';
 import {TbDog} from "react-icons/tb";
 import '../css/BreedResult.css'
+import defImage from '/public/searchBackground.jpg'
 
 //SearchResult to dodatkowy komponen pomocniczy który przyjmuje dane i w zależności od tego co otrzyma renderuje odpowiedni layout
 function SearchResult({isInvalid, breedData}) {
@@ -19,7 +20,7 @@ function SearchResult({isInvalid, breedData}) {
                         <TbDog color={'#f5f5f5'} size={84}/>
                      </div> :
                     noData ?
-                        <div className={'banner_img'}></div> : ''
+                        <div className={'banner_img'} style={{backgroundImage: `url(${defImage})`}}></div> : ''
                 }
                 <p className={'banner_msg'}>
                     {isInvalid ? noBreed : noData ? defaultMsg : ''}
