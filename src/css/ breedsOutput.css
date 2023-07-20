@@ -1,9 +1,16 @@
 .breedsList {
   list-style: none;
   padding: 0;
+  padding-bottom: 1em;
+  overflow: auto;
+  height: 100%;
+  max-height: 700px;
 }
 .breedsList_item {
   margin-bottom: 1.2em;
+}
+.breedsList:last-child {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=%20breedsOutput.css.map */

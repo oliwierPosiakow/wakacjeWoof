@@ -1,7 +1,14 @@
 .breedsList{
   list-style: none;
   padding: 0;
+  padding-bottom: 1em;
+  overflow: auto;
+  height: 100%;
+  max-height: 700px;
   &_item{
     margin-bottom: 1.2em;
+  }
+  &:last-child{
+    margin-bottom: 0;
   }
 }
